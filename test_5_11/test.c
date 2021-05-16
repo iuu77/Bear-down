@@ -64,8 +64,8 @@ void test1()
 //}
 
 
-//写一个自己的my_qsort函数
 
+//交换函数
 void My_Swap(char* x, char* y, int width)
 {
 	int i = 0;
@@ -79,7 +79,7 @@ void My_Swap(char* x, char* y, int width)
 	}
 }
 
-
+//写一个自己的my_qsort函数
 void my_qsort(void* p, int length, int width, int(*com)(const void* e1, const void* e2))
 {
 	//冒泡排序：趟数 length-1
